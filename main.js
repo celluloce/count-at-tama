@@ -18,8 +18,8 @@ ready(() => {
         })
         b1.addEventListener('click', () => {
             const current = localStorage.getItem(id) | 0;
-            b1.innerText = current++;
-            localStorage.setItem(id, current++);
+            b1.innerText = current + 1;
+            localStorage.setItem(id, current + 1);
         });
     };
     registerButtonBehavior('button1');
